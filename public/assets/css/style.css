@@ -1,0 +1,44 @@
+/* OVERRIDE */
+.navbar {
+    margin-bottom: 0px;
+}
+
+/* ARTICLES LIST */
+.articles ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #2c3e50;
+}
+
+.articles li{
+    position: relative;
+    padding: 18px 42px 21px 25px;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 1.214;
+    cursor: pointer;
+    background: #34495e;
+    background-size: 20px 20px;
+    -webkit-transition: .25s;
+    transition: .25s;
+    color: #FFFFFF;
+}
+
+.articles li:hover{
+    background: #1abc9c;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+
+.articles-icon {
+    float: left;
+    padding: 0px 22px 0 0;
+    font-size: 24px;
+}
+
+.articles-name {
+    margin: 1px 0 3px;
+    font-size: 17px;
+    color: #fff;
+}
