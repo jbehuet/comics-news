@@ -37,6 +37,11 @@
     font-size: 24px;
 }
 
+.articles-icon-right{
+    float: right;
+    padding: 13px 0px 0 0;
+}
+
 .articles-name {
     margin: 1px 0 3px;
     font-size: 17px;

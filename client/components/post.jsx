@@ -13,6 +13,9 @@ Post = React.createClass({
                 <div className="articles-icon">
                     <img src="assets/images/boulet-logo_48.jpg" />
                 </div>
+                <div className="articles-icon-right">
+                    <span className="fui-triangle-down"></span>
+                </div>
                 <div className="articles-content">
                   <h4 className="articles-name">
                     {this.props.post.title}
