@@ -3,8 +3,10 @@ PostsStore = Reflux.createStore({
     data: {},
     
     init: function() {
-        // Load Boulet
-        PostsActions.load('http://www.bouletcorp.com/feed/', this.onLoadSuccess, this.onLoadError);
+        var urls = ['http://www.bouletcorp.com/feed/', 'http://www.paka-blog.com/feed/', 'http://www.smbc-comics.com/rss.php'];
+        urls.forEach(function(url, id){
+            PostsActions.load(url, this.onLoadSuccess, this.onLoadError);
+        }.bind(this));
     },
     
     onLoad: function() {
@@ -15,9 +17,8 @@ PostsStore = Reflux.createStore({
     },
     
     onLoadSuccess: function(res) {
-        console.log(res);
-        this.data.posts[0] = {
-            title: res.firstChild.childNodes[1].childNodes[19].getElementsByTagName('title')[0].textContent,
+       this.data.posts[this.data.posts.length] = {
+            title: res[0].title,
             description: "..."
         };
         this.data.loadError = false;
