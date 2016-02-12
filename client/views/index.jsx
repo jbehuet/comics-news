@@ -15,7 +15,7 @@ Index = React.createClass({
                    <h1>Lastest</h1>
                </div>
                <div className="col-md-6 button">
-                   <span className='fui-gear' onClick={this.handleClick}></span>
+                   <a href="/settings"><span className='fui-gear'></span></a>
                </div>
             </div>
             <div className="row">

@@ -14,12 +14,13 @@
     margin-top:35px;
 }
 
-#list-header>.button>span{
+#list-header>.button>a{
+    color: #34495e;
     float: right;
     padding: 0 40px;
 }
 
-#list-header>.button>span:hover{
+#list-header>.button>a:hover{
     color:#1abc9c;
 }
 
