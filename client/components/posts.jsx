@@ -14,7 +14,7 @@ Posts = React.createClass({
             }.bind(this));
 
             return (
-                <ul>
+                <ul id="posts">
                   {rows}
                 </ul>
             );

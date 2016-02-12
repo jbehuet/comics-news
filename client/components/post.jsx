@@ -30,7 +30,7 @@ Post = React.createClass({
                   <h4 className="articles-name">
                     {this.props.post.title}
                   </h4>
-                  <a href={this.props.post.link} target="_blank">Voir l'article</a>
+                  <a href={this.props.post.link} target="_blank">Voir l'article d'origine</a>
                   <br />
                   <div className="articles-body">
                       <div dangerouslySetInnerHTML={this.rawMarkup(this.props.post.description)} />

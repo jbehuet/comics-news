@@ -4,6 +4,25 @@
 }
 
 /* ARTICLES LIST */
+
+#list-header>.title{
+    float: left;
+}
+
+#list-header>.button{
+    line-height: 61px;
+    margin-top:35px;
+}
+
+#list-header>.button>span{
+    float: right;
+    padding: 0 40px;
+}
+
+#list-header>.button>span:hover{
+    color:#1abc9c;
+}
+
 .articles ul {
     padding: 0;
     margin: 0;
@@ -35,6 +54,10 @@
     background: #ecf0f1;
     -webkit-transition: .25s;
     transition: .25s;
+}
+
+.articles li:hover>.articles-icon-right{
+    color:#1abc9c;
 }
 
 .articles-icon {
