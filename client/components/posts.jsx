@@ -8,7 +8,8 @@ Posts = React.createClass({
               rows.push (
                 <Post
                   key={id}
-                  post={post} />
+                  post={post}
+                  isLast={this.state.data.posts.length - 1 == id} />
               );
             }.bind(this));
 

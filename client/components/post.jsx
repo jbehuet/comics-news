@@ -1,13 +1,17 @@
 Post = React.createClass({
   propTypes: {
-        post: React.PropTypes.object.isRequired
+        post: React.PropTypes.object.isRequired,
+        isLast: React.PropTypes.bool.isRequired
   },
   getInitialState: function() {
-    return {};
+    return {
+        expanded:true
+    };
   },
   componentWillMount() {
   },
   handleClick: function(e){
+    this.setState({expanded: !this.state.expanded});
     $(e.currentTarget).find('.articles-body').toggle();
   },
   rawMarkup: function(props) {
@@ -15,12 +19,12 @@ Post = React.createClass({
   },
   render() {
     return (
-            <li onClick={this.handleClick}>
+            <li onClick={this.handleClick} className={this.props.isLast ? 'last' : ''}>
                 <div className="articles-icon">
                     <img src="assets/images/comics-ico.png" />
                 </div>
                 <div className="articles-icon-right">
-                    <span className="fui-triangle-down"></span>
+                    <span className={this.state.expanded ? 'fui-triangle-up' : 'fui-triangle-down' }></span>
                 </div>
                 <div className="articles-content">
                   <h4 className="articles-name">

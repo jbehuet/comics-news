@@ -13,7 +13,7 @@
 
 .articles li{
     position: relative;
-    padding: 18px 42px 21px 25px;
+    padding: 10px 40px 20px 20px;;
     font-size: 14px;
     line-height: 1.214;
     cursor: pointer;
@@ -22,7 +22,13 @@
     -webkit-transition: .25s;
     transition: .25s;
     color: #34495e;
-    border: 1px solid #34495e;
+    border-top: 1px solid #34495e;
+    border-right: 1px solid #34495e;
+    border-left: 1px solid #34495e;
+}
+
+.articles li.last{
+    border-bottom: 1px solid #34495e;
 }
 
 .articles li:hover{
