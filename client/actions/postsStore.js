@@ -3,7 +3,7 @@ PostsStore = Reflux.createStore({
     data: {},
     
     init: function() {
-        var urls = ['http://www.bouletcorp.com/feed/', 'http://www.paka-blog.com/feed/', 'http://www.smbc-comics.com/rss.php'];
+        var urls = ['http://www.commitstrip.com/fr/feed/', 'http://www.bouletcorp.com/feed/', 'http://www.paka-blog.com/feed/', 'http://www.smbc-comics.com/rss.php'];
         urls.forEach(function(url, id){
             PostsActions.load(url, this.onLoadSuccess, this.onLoadError);
         }.bind(this));
@@ -17,13 +17,9 @@ PostsStore = Reflux.createStore({
     },
     
     onLoadSuccess: function(res) {
-       this.data.posts[this.data.posts.length] = {
-            title: res[0].title,
-            description: "..."
-        };
+       this.data.posts[this.data.posts.length] = res[0];
         this.data.loadError = false;
         
-        console.log(this.data);
         this.trigger(this.data);
     },
     

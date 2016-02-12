@@ -14,19 +14,19 @@
 .articles li{
     position: relative;
     padding: 18px 42px 21px 25px;
-    margin-top: 2px;
     font-size: 14px;
     line-height: 1.214;
     cursor: pointer;
-    background: #34495e;
+    background: #FFF;
     background-size: 20px 20px;
     -webkit-transition: .25s;
     transition: .25s;
-    color: #FFFFFF;
+    color: #34495e;
+    border: 1px solid #34495e;
 }
 
 .articles li:hover{
-    background: #1abc9c;
+    background: #ecf0f1;
     -webkit-transition: .25s;
     transition: .25s;
 }
@@ -45,5 +45,8 @@
 .articles-name {
     margin: 1px 0 3px;
     font-size: 17px;
-    color: #fff;
+}
+
+.articles-body {
+    text-align: center;
 }
