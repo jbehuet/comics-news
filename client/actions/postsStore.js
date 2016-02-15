@@ -3,9 +3,10 @@ PostsStore = Reflux.createStore({
     data: {},
     
     init: function() {
-        var urls = ['http://www.commitstrip.com/fr/feed/', 'http://www.bouletcorp.com/feed/', 'http://www.paka-blog.com/feed/', 'http://www.smbc-comics.com/rss.php'];
-        urls.forEach(function(url, id){
-            PostsActions.load(url, this.onLoadSuccess, this.onLoadError);
+        //var urls = ['http://www.commitstrip.com/fr/feed/', 'http://www.bouletcorp.com/feed/', 'http://www.paka-blog.com/feed/', 'http://www.smbc-comics.com/rss.php'];
+        var feeds = Feeds.find({}).fetch();
+        feeds.forEach(function(feed, id){
+            PostsActions.load(feed.url, this.onLoadSuccess, this.onLoadError);
         }.bind(this));
     },
     

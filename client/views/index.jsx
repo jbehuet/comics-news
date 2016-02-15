@@ -4,9 +4,6 @@ Index = React.createClass({
   },
   componentWillMount() {
   },
-  handleClick: function(e){
-    
-  },
   render() {
     return (
         <div>
