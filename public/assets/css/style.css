@@ -1,6 +1,7 @@
 /* OVERRIDE */
 .navbar {
     margin-bottom: 0px;
+    border-radius: 0px;
 }
 
 /* ARTICLES LIST */
@@ -28,7 +29,6 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    background-color: #2c3e50;
 }
 
 .articles li{
@@ -45,6 +45,7 @@
     border-top: 1px solid #34495e;
     border-right: 1px solid #34495e;
     border-left: 1px solid #34495e;
+    border-radius: 6px;
 }
 
 .articles li.last{

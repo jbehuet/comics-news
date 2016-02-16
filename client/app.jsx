@@ -3,18 +3,26 @@ App = React.createClass({
   render() {
     return (
       <div>
-       <nav className="navbar navbar-default navbar-static-top">
+       <nav className="navbar navbar-default">
             <div className="container">
                 <div className="navbar-header">
+                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                    </button>
                     <a href="/" className="navbar-brand">Comics News</a>
                 </div>
-                <div id="navbar" className="navbar-collapse collapse navbar-right">
+                <div id="navbar" className="navbar-collapse collapse navbar-right" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav">
                         <li><a href="/about">About</a></li>
+                        <li><a href="/settings">Settings</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+        
         <div className="container">
           {/* Views will be rendered here */}
           {this.props.children}
@@ -24,6 +32,6 @@ App = React.createClass({
   }
 });
 
-$(document).ready(function() {
+$(document).ready(function() {    
     ReactDOM.render(<Routes/>, document.getElementById('app'));
 });

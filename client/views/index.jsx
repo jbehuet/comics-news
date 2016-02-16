@@ -11,9 +11,6 @@ Index = React.createClass({
                <div className="col-md-6 title">
                    <h1>Lastest</h1>
                </div>
-               <div className="col-md-6 button">
-                   <a href="/settings"><span className='fui-gear'></span></a>
-               </div>
             </div>
             <div className="row">
                 <div className="articles col-xs-12">
