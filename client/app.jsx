@@ -16,8 +16,8 @@ App = React.createClass({
                 </div>
                 <div id="navbar" className="navbar-collapse collapse navbar-right" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav">
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/settings">Settings</a></li>
+                        <li><a href="/settings"><span className='fui-gear'></span> Settings</a></li>
+                        <li><a href="/about"><span className='fui-info-circle'></span> About</a></li>
                     </ul>
                 </div>
             </div>

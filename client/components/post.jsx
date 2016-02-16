@@ -17,11 +17,14 @@ Post = React.createClass({
   rawMarkup: function(props) {
     return { __html: props };
   },
+  getDomain: function(url){ 
+    return url.match(/(http||https)?\:\/\/([^\/:?#]+)(?:[\/:?#]|$)/g)[0];
+  },
   render() {
     return (
             <li onClick={this.handleClick} className={this.props.isLast ? 'last' : ''}>
                 <div className="articles-icon">
-                    <img src="assets/images/comics-ico.png" />
+                    <img src={"http://www.google.com/s2/favicons?domain=" + this.getDomain(this.props.post.link)} />
                 </div>
                 <div className="articles-icon-right">
                     <span className={this.state.expanded ? 'fui-triangle-up' : 'fui-triangle-down' }></span>

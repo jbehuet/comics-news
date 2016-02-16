@@ -1,28 +1,30 @@
 /* OVERRIDE */
+
 .navbar {
     margin-bottom: 0px;
     border-radius: 0px;
 }
 
+
 /* ARTICLES LIST */
 
-#list-header>.title{
+#list-header>.title {
     float: left;
 }
 
-#list-header>.button{
+#list-header>.button {
     line-height: 61px;
-    margin-top:35px;
+    margin-top: 35px;
 }
 
-#list-header>.button>a{
+#list-header>.button>a {
     color: #34495e;
     float: right;
     padding: 0 40px;
 }
 
-#list-header>.button>a:hover{
-    color:#1abc9c;
+#list-header>.button>a:hover {
+    color: #1abc9c;
 }
 
 .articles ul {
@@ -31,9 +33,10 @@
     list-style-type: none;
 }
 
-.articles li{
+.articles li {
     position: relative;
-    padding: 10px 40px 20px 20px;;
+    padding: 10px 40px 20px 20px;
+    ;
     font-size: 14px;
     line-height: 1.214;
     cursor: pointer;
@@ -45,21 +48,20 @@
     border-top: 1px solid #34495e;
     border-right: 1px solid #34495e;
     border-left: 1px solid #34495e;
-    border-radius: 6px;
 }
 
-.articles li.last{
+.articles li.last {
     border-bottom: 1px solid #34495e;
 }
 
-.articles li:hover{
+.articles li:hover {
     background: #ecf0f1;
     -webkit-transition: .25s;
     transition: .25s;
 }
 
-.articles li:hover>.articles-icon-right{
-    color:#1abc9c;
+.articles li:hover>.articles-icon-right {
+    color: #1abc9c;
 }
 
 .articles-icon {
@@ -68,7 +70,7 @@
     font-size: 24px;
 }
 
-.articles-icon-right{
+.articles-icon-right {
     float: right;
     padding: 13px 0px 0 0;
 }
@@ -80,4 +82,12 @@
 
 .articles-body {
     text-align: center;
+}
+
+/* SMARTPHONE && TABLET */
+@media only screen and (max-device-width: 1024px) {
+    .articles-body img {
+        width: 100%;
+        height: 100%;
+    }
 }
