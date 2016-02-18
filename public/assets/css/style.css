@@ -84,6 +84,13 @@
     text-align: center;
 }
 
+/* SETTINGS */
+
+.col-action{
+    text-align: right;
+}
+
+
 /* SMARTPHONE && TABLET */
 @media only screen and (max-device-width: 1024px) {
     .articles-body img {

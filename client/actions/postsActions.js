@@ -1,5 +1,5 @@
 PostsActions = Reflux.createActions([  
- 'load'
+ 'load','add','remove'
 ]);
 
 PostsActions.load.listen( function(url, success, error) {   

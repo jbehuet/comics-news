@@ -18,7 +18,7 @@ PostsStore = Reflux.createStore({
     },
     
     onLoadSuccess: function(res) {
-       this.data.posts[this.data.posts.length] = res[0];
+        this.data.posts[this.data.posts.length] = res[0];
         this.data.loadError = false;
         
         this.trigger(this.data);
