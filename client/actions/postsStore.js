@@ -3,8 +3,7 @@ PostsStore = Reflux.createStore({
     data: {},
     
     init: function() {
-        var feeds = [{url:'http://www.commitstrip.com/fr/feed/'}, {url:'http://www.bouletcorp.com/feed/'}, {url:'http://www.paka-blog.com/feed/'}, {url:'http://www.smbc-comics.com/rss.php'}];
-        //var feeds = Feeds.find({}).fetch();
+        var feeds = FeedsStore.feeds;
         feeds.forEach(function(feed, id){
             PostsActions.load(feed.url, this.onLoadSuccess, this.onLoadError);
         }.bind(this));
